@@ -1,4 +1,4 @@
-Cannabis Menu Review Script
+<h1>Cannabis Menu Review Script</h1>
 
 This is a Python script that reads from a CSV file of cannabis stores. It queries the online store's api and uses OpenAI to extract information about the cannabis strains and create a review of the cannabis menu.
 
