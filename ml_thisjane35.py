@@ -23,12 +23,12 @@ headers = {
  'Accept-Encoding':'gzip, deflate, br',
  'Accept-Language':'en-US,en;q=0.9'}
 
-
+# flowers3 contains the percentage to search fo
 with open('flowers3', 'r') as f:
     thc_value = f.readline()
 
 
-# Open the CSV file
+# Open the stores2 csv file which contains the storeId
 with open('stores2', 'r') as file:
     for line in file:
         # process the line here
