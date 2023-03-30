@@ -23,7 +23,10 @@ time: Used to measure the response time of the OpenAI API
 concurrent.futures: Used to manage concurrent API requests
 
 
-Usage
+
+Usage: 
+
+
 This is example code. Use of this code is at your own risk.
 
 Get Permission to poll the servers you're connecting to.
@@ -34,7 +37,7 @@ Openai's model is currently accepts 2000 tokens per transaction.
 
 Clone the repository and navigate to the project directory.
 
-Install the required libraries with pip install -r requirements.txt
+Install the required libraries with pip.
 
 Add a CSV file named flowers3 with the THC value you want to search for.
 
