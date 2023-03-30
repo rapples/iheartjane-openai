@@ -43,7 +43,7 @@ Add a CSV file named flowers3 with the THC value you want to search for.
 
 Add a CSV file named stores2 with the store IDs and addresses.
 
-Run the script with python3 ml_thisjane35.py
+Run the script with python3 -W ignore ml_thisjane35.py
 
 The script will generate a text file named ml_jane.txt with the extracted data for each store.
 
