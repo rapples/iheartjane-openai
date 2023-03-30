@@ -1,14 +1,6 @@
-import requests
-import re
-import base64
-import csv
-import io
-import openai
-import string
-import time
+import concurrent.futures, requests, re, base64, csv, io, openai, string, time
 from pprint import pprint
 from io import StringIO
-import concurrent.futures
 
 output_buffer = io.StringIO()
 headers = {
