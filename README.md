@@ -5,14 +5,23 @@ This is a Python script that extracts information from a CSV file of cannabis st
 Libraries Used
 
 requests: Used to make HTTP requests to the Algolia API
+
 re: Used to extract relevant data from the Algolia API response
+
 base64: Used to encode the Algolia API key
+
 csv: Used to read the CSV files
+
 io: Used to handle input and output
+
 openai: Used to make requests to the OpenAI API
+
 string: Used to remove punctuation from the input
+
 time: Used to measure the response time of the OpenAI API
+
 concurrent.futures: Used to manage concurrent API requests
+
 
 Usage
 
@@ -31,6 +40,7 @@ The script will generate a text file named ml_jane.txt with the extracted data f
 The script will then use the OpenAI API to generate a cannabis menu review for each store.
 
 The reviews will be printed to the console.
+
 
 License
 This project is licensed under the terms of the MIT license.
