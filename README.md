@@ -2,7 +2,7 @@
 
 This is a Python script that reads from a CSV file of cannabis stores. It queries the online store's api and uses OpenAI to extract information about the cannabis strains and create a review of the cannabis menu.
 
-Libraries Used
+<h3>Libraries Used </h3>
 
 requests: Used to make HTTP requests to the Algolia API
 
@@ -24,7 +24,7 @@ concurrent.futures: Used to manage concurrent API requests
 
 
 
-Usage: 
+ <h3>Usage:</h3>
 
 
 This is example code. Use of this code is at your own risk.
@@ -52,5 +52,5 @@ The script will then use the OpenAI API to generate a cannabis menu review for e
 The reviews will be printed to the console.
 
 
-License
+ <h3>License </h3>
 This project is licensed under the terms of the MIT license.
