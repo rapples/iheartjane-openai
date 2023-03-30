@@ -43,13 +43,13 @@ Add a CSV file named flowers3 with the THC value you want to search for.
 
 Add a CSV file named stores2 with the store IDs and addresses.
 
-Run the script with python3 -W ignore ml_thisjane35.py
+Run the script with python3 -W ignore ml_thisjane35.py  (>reviews.txt to save to a file)
 
-The script will generate a text file named ml_jane.txt with the extracted data for each store.
+The script will temporarily generate a text file named ml_jane.txt with the extracted data for each store.
 
-The script will then use the OpenAI API to generate a cannabis menu review for each store.
+The script will then use the OpenAI API to generate a cannabis menu review for each data file's contents.
 
-The reviews will be printed to the console.
+The reviews will be printed to the console, usually this would be redirected to a file. 
 
 
  <h3>License </h3>
