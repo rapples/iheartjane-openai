@@ -35,11 +35,6 @@ with open('stores2', 'r') as file:
         number = int(line[:line.find(',')])
         info = line[line.find(','):]
         #print("Query store "+str(number))
-        # Assign the digits to the variables in reverse order
-        pos = number % 10
-        pos2 = (number // 10) % 10
-        pos3 = (number // 100) % 10
-        pos4 = number // 1000
         payload = '{"requests":[{"indexName":"menu-products-by-price-eighth-ounce-production","params":"facets=%5B%5D&filters=root_types%3A\\\"flower\\\"%20AND%20available_weights%3A%22eighth%20ounce%22%20AND%20percent_thc%20%3E%3D%2025%20AND%20store_id%20%3D%201552%20AND%20kind%3A%22flower%22%20OR%20root_types%3A%22flower%22&highlightPostTag=%3C%2Fais-highlight-0000000000%3E&highlightPreTag=%3Cais-highlight-0000000000%3E&hitsPerPage=48&optionalFilters=brand%3ARythm%3Cscore%3D5%3E%2Cbrand%3AGood%20Green%3Cscore%3D4%3E%2Cbrand%3ABetty%27s%20Eddies%2Cbrand%3Aincredibles%2Cbrand%3AMary%27s%20Medicinals%2Cbrand%3ADogwalkers%2Cbrand%3ARythm%20-%20Remix%2Cbrand%3ADr.%20Solomon%27s%2Cbrand%3A%26Shine&page=0&tagFilters=&userToken=WIx1kue3HisuiXeSos67v"}]}'
         # Insert the storeId variable into the payload
         storeId = number
