@@ -53,7 +53,7 @@ with open('stores2', 'r') as file:
         storeId = number
         payload = payload.replace('1552', str(storeId))
         #print(payload)  # add this line
-        payload = payload.replace('percent_thc%20%3E%3D%2025', 'percent_thc%20%3E%3D%20'+str(28))
+        payload = payload.replace('percent_thc%20%3E%3D%2025', 'percent_thc%20%3E%3D%20'+str(thc_value))
         response0 = requests.request("POST", "https://vfm4x0n23a-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.14.2)%3B%20Browser%3B%20JS%20Helper%20(3.11.1)%3B%20react%20(18.2.0)%3B%20react-instantsearch%20(6.36.0)", headers=headers, data=payload,verify=False)
         content = response0.json()
 
