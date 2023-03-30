@@ -97,7 +97,6 @@ with open('stores2', 'r') as file:
 
         # Read and split the data into a list of dictionaries
         f.close()
-        #print("close the file..")
         data = []
         header = []
         with open("ml_jane.txt", "r") as f:
@@ -120,11 +119,6 @@ with open('stores2', 'r') as file:
         for d in data:
             try:
                 for key, value in d.items():
-                    #if 'product_percent_thc' in key :
-                        #print(key +" found  product_percent_thc")
-                        #else:
-                        #print(key +" didn't find product_percent_thc")
-                        #print(f'Key: {key}, Value: {value}')
                     if 'value' in key and (value is not None) and ('None' not in value):
                         if 'indica' in value :
                             vtype = 'Indica'
@@ -136,29 +130,21 @@ with open('stores2', 'r') as file:
                             vtype = 'Hybrid'
                             #print("set vtype value "+value)
                     if ('brand' in key) and ((value is  None) or ('None' not in value)):
-
-                        #print("set value brand "+value)
                         vbrand = value
                     if 'name' in key and (value is not None) and ('None' not in value):
-                        #print("set value name "+value)
                         vname = value+" "+vbrand_subtype+" "+vcustom_product_subtype     
                     if 'brand_subtype' in key and (value is not None) and ('None' not in value):
-                        #print("set value brand_subtype "+value)
                         if "round" in value:
                             vbrand_subtype= "1"
                     if 'custom_product_subtype' in key and (value is not None) and ('None' not in value):
-                        #print("set value custom_product_subtype "+value)
                         if "Shake" in value:
                             vbrand_subtype = "2"
                     if 'percent_thc'  in key : 
-                        # print("set value thc "+value)
                         vthc = value
                         sendtochatgpt=sendtochatgpt+vbrand[:25]+","+vname[:50]+","+vtype[:10]+","+ vthc[:7]+","+ vthca[:7]+","+vprice[:5]+"\n"
                     if 'percent_thca' in key and (value is not None) and ('None' not in value):
-                        #print("set value percent_thca "+value)
                         vthca = max(value,vthc,thca)
                     if 'bucket_price' in key and (value is not None) and ('None' not in value):
-                        #print("set value bucket_price "+value)
                         vprice = "$"+str(value)
             except:
                 continue     
