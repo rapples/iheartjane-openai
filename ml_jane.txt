@@ -1,1 +1,1 @@
-StoreId: 2702, ,Verilife - Manayunk, PA,4026 Main St, Philadelphia, Pennsylvania, 19127,40.021339416503906,-75.21757507324219
+data will be saved here.
